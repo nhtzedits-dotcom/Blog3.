@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Brisa Digital - Peça uma proposta</title>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style3.css">
+</head>
+<body>
+<header class="nav"><strong>Brisa Digital</strong><nav><a href="#contato">Contato</a><a href="#sobre">Sobre</a><a href="#servicos">Serviços</a></nav></header>
+<main class="hero" id="contato">
+  <div class="pitch">
+    <h1>Seu projeto digital, do rascunho ao ar.</h1>
+    <p>Conte o que você precisa e receba uma proposta sem custo e sem compromisso.</p>
+    <ul><li>Resposta em até 2 dias úteis</li><li>Orçamento claro, sem taxas escondidas</li><li>Equipe que acompanha o projeto inteiro</li></ul>
+  </div>
+  <form class="form" id="f">
+    <h2>Solicitar proposta</h2>
+    <div class="row"><label>Nome completo<input required placeholder="Seu nome"></label><label>Email<input type="email" required placeholder="seu@email.com"></label></div>
+    <div class="row"><label>Empresa<input placeholder="Nome da empresa"></label><label>Telefone<input type="tel" placeholder="(11) 99999-9999"></label></div>
+    <label>Qual serviço você precisa?<select required><option value="">Selecione um serviço</option><option>Criação de site</option><option>Aplicativo mobile</option><option>Design de interface</option><option>Consultoria</option></select></label>
+    <label>Orçamento estimado<input placeholder="R$ valor aproximado"></label>
+    <label>Sobre o projeto<textarea rows="4" placeholder="Descreva seus objetivos em poucas linhas"></textarea></label>
+    <label class="chk"><input type="checkbox"> Aceito receber novidades da Brisa Digital</label>
+    <button class="btn">Enviar proposta</button>
+    <p id="ok" role="status"></p>
+  </form>
+</main>
+<footer class="foot" id="sobre">
+  <div><h4>Brisa Digital</h4><p>Soluções digitais simples e bem feitas desde 2020.</p></div>
+  <div id="servicos"><h4>Links rápidos</h4><a href="#sobre">Sobre nós</a><a href="#servicos">Serviços</a><a href="#contato">Contato</a><a href="#">Política de privacidade</a></div>
+  <div><h4>Contato</h4><p>oi@brisadigital.com</p><p>(11) 99999-9999</p><p>São Paulo, SP</p></div>
+  <div><h4>Redes sociais</h4><p class="soc"><a href="#">Instagram</a><a href="#">LinkedIn</a><a href="#">YouTube</a></p></div>
+</footer>
+<script>
+document.getElementById('f').onsubmit=e=>{e.preventDefault();document.getElementById('ok').textContent='Proposta enviada! Entraremos em contato em breve.';e.target.reset()};
+</script>
+</body>
+</html>
